@@ -1,4 +1,4 @@
- body {
+/* /* body {
   max-width: 1920px;
   margin: auto;
 }
@@ -25,11 +25,11 @@
   align-items: center;
 }
 
-.top-header .name {
+/* .top-header .name {
   font-size: 26px;
-} 
+} */
 
- .nav ul {
+/* .nav ul {
   display: flex;
   list-style-type: none;
   font-size: 14px;
@@ -51,7 +51,7 @@
 
 #about {
   display: flex;
-  background-color: #9E9E9E;
+  background-color: #f6d2b8;
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
@@ -66,13 +66,13 @@
   bottom: 0;
   left: 0;
   z-index: -1;
-} 
+} */
 
- .picture-nina {
+/* .picture-nina {
   flex: 1;
   margin: 0 20px;
   z-index: 0;
-} 
+} */
 
 .img-camera{
 	width: 30%;
@@ -90,7 +90,7 @@
   margin-bottom: 60px;
   font-size: 30px;
 }
- .about-me__introduction {
+/* .about-me__introduction {
   font-family: "Spectral";
   font-weight: 800;
   font-style: italic;
@@ -102,12 +102,11 @@
 }
 
 #gallery {
-  	min-height: 100vh; 
-} 
- .title {
+  /*	min-height: 100vh; */
+/* } */
+/* .title {
   text-align: center;
   padding-block: 2em;
-  color: white;
 }
 .gallery .nav {
   justify-content: center;
@@ -115,7 +114,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color:#2C6063;
+  background-color: #beb45a;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -169,12 +168,12 @@
 
 #services {
   margin: auto;
-  background-color: #2C6063;
+  background-color: #a8d5d8;
   position: relative;
 }
 #services .container::before {
   content: " ";
-  background-color: #82406C;
+  background-color: #1c6474;
   position: absolute;
   width: 100%;
   height: 30%;
@@ -203,7 +202,7 @@
 
 #contact {
   margin: auto;
-  background-color: #9E9E9E;
+  background-color: #d8d3a8;
   position: relative;
   padding-inline: 100px;
   padding-block: 100px;
@@ -250,7 +249,7 @@ form textarea {
   margin-bottom: 20px;
 }
 input[type="submit"] {
-  /* background-color: #beb45a; */
+  background-color: #beb45a;
   padding: 0.5em 1em;
 }
 
@@ -270,8 +269,8 @@ input[type="submit"] {
   #about-me p {
     width: 100%;
   }
-} 
-
+} */ 
+/* 
 @media all and (max-width: 1000px) {
   #about {
     flex-direction: column;
@@ -330,8 +329,9 @@ input[type="submit"] {
     right: 0;
     z-index: -1;
   }
-} 
- @media all and (max-width: 650px) {
+} */
+
+/* @media all and (max-width: 650px) {
   .top-header {
     flex-direction: column;
     padding-inline: 0;
@@ -367,4 +367,4 @@ input[type="submit"] {
   .picture {
     width: 80%;
   }
-}   
+}   */
