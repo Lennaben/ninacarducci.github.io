@@ -210,7 +210,7 @@
     </section>
     <section id="gallery">
       <h4 class="title-portfolio">Portfolio</h4>
-      <div class="container py-3" itemscope itemtype="">
+      <div class="container py-3" itemscope itemtype="https://schema.org/ImageGallery">
         <div class="gallery" style="display: none">
           <img
             data-gallery-tag="Concert"
@@ -332,18 +332,19 @@
 </div>
 
     </section>
-    <section class="quote">
-      <figure>
-        <blockquote>
-          <h4 class="quote__text">
-            De manière inconsciente, je crois, je guette un regard, une
-            expression, des traits ou une nostalgie capable de résumer ou plus
-            exactement de révéler une vie
-          </h4>
-        </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
-      </figure>
-    </section>
+    <section class="quote" itemscope itemtype="http://schema.org/Quotation">
+  <figure>
+    <blockquote>
+      <h4 class="quote__text" itemprop="text">
+        De manière inconsciente, je crois, je guette un regard, une
+        expression, des traits ou une nostalgie capable de résumer ou plus
+        exactement de révéler une vie
+      </h4>
+    </blockquote>
+    <figcaption class="quote__author" itemprop="author">- Richard Avedon</figcaption>
+  </figure>
+</section>
+
     <section id="contact">
       <div class="container">
         <footer class="form-container">
