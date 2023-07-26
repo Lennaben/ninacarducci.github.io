@@ -1,8 +1,8 @@
-
- <!-- CODE HTML AVANT AVOIR ET MINIFIER  -->
+<!-- CODE HTML AVANT AVOIR ET MINIFIER  -->
 <!DOCTYPE html>
-<html>
-  <meta itemscope>
+<html lang="fr">
+  <head>
+    <meta itemscope />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -13,10 +13,67 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <html lang="fr">
     <meta charset="UTF-8" />
     <title>Portfolio Nina</title>
-    <meta name="descrptions" content= "Portfolio de nina une photographe situé sur bordeaux, les de concerts, mariage, portrait, entreprise ,  on plus de secret pour elle les shootings photo,  retouches et des albume photos sont egalement proposer " >
+    <meta
+      name="descrptions"
+      content="Portfolio de nina une photographe situé sur bordeaux, les de concerts, mariage, portrait, entreprise ,  on plus de secret pour elle les shootings photo,  retouches et des albume photos sont egalement proposer "
+    />
+    <!-- Balise méta pour l'image miniature -->
+    <meta
+      property="og:image"
+      content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AInstagram_icon.png&psig=AOvVaw3mujh2R65XLG9SJgHAcKQf&ust=1690450253122000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLi75IiIrIADFQAAAAAdAAAAABAE"
+    />
+    <!-- Balise méta pour le titre -->
+    <meta property="og:title" content="Titre_de_la_page_pour_Instagram" />
+    <!-- Balise méta pour la description -->
+    <meta
+      property="og:description"
+      content="Description_de_la_page_pour_Instagram"
+    />
+    <!-- Balise méta pour le nom d'utilisateur Instagram -->
+    <meta property="og:site_name" content="Nina_Carducci" />
+
+    <!-- Balise méta pour l'image miniature -->
+    <meta
+      property="og:image"
+      content="URL_de_l_image_miniature_pour_Facebook"
+    />
+    <!-- Balise méta pour le titre -->
+    <meta property="og:title" content="Titre_de_la_page_pour_Facebook" />
+    <!-- Balise méta pour la description -->
+    <meta
+      property="og:description"
+      content="Description_de_la_page_pour_Facebook"
+    />
+    <!-- Balise méta pour le nom d'utilisateur Facebook -->
+    <meta
+      property="og:site_name"
+      content="Nom_d_utilisateur_Facebook_de_Nina_Carducci"
+    />
+
+    <!-- Balise méta pour l'image miniature -->
+    <meta property="og:image" content="URL_de_l_image_miniature_pour_Twitter" />
+    <!-- Balise méta pour le titre -->
+    <meta property="og:title" content="Titre_de_la_page_pour_Twitter" />
+    <!-- Balise méta pour la description -->
+    <meta
+      property="og:description"
+      content="Description_de_la_page_pour_Twitter"
+    />
+    <!-- Balise méta pour le nom d'utilisateur Twitter -->
+    <meta
+      name="twitter:creator"
+      content="@Nom_d_utilisateur_Twitter_de_Nina_Carducci"
+    />
+    <!-- Balise méta pour le site Twitter -->
+    <meta
+      name="twitter:site"
+      content="@Nom_d_utilisateur_Twitter_de_Nina_Carducci"
+    />
+    <!-- Balise méta pour les cartes Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -29,28 +86,38 @@
   <body>
     <header class="top-header">
       <h1 class="name">Nina Carducci</h1>
-      <nav class="nav">
+      <!-- NAv -->
+      <nav
+        class="nav"
+        itemscope
+        itemtype="http://www.schema.org/SiteNavigationElement">
         <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li itemprop="name"><a href="#about" itemprop="url">À propos</a></li>
+          <li itemprop="name"><a href="#gallery" itemprop="url">Galerie</a></li>
+          <li itemprop="name">
+            <a href="#services" itemprop="url">Service</a>
+          </li>
+          <li itemprop="name"><a href="#contact" itemprop="url">Contact</a></li>
           <li>
             <a
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt="logo instagram"
-            /></a>
+              itemprop="sameAs">
+              <img src="assets/images/instagram.png" alt="logo instagram" />
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <section id="header">
+      <!-- Slider Image -->
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
         data-bs-ride="carousel"
+        itemscope
+        itemtype="https://schema.org/ImageGallery"
       >
         <div class="carousel-indicators">
           <button
@@ -77,7 +144,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src= "./assets/images/slider/ryoji.webp"
+              src="./assets/images/slider/ryoji.webp"
               class="img-slider"
               alt="homme debout"
             />
@@ -118,29 +185,32 @@
       </div>
     </section>
     <section id="about">
-      <img   alt="nina" class="picture-nina" src="./assets/images/nina.webp" />
-      <div id="about-me">
-        <h2 class="about-me__title">A propos de moi</h2>
-        <h3 class="about-me__introduction">
-          Devenir photographe était pour moi une évidence. Comme si j’y étais
-          prédestiné. Saisir un moment, une émotion, une situation, un endroit,
-          une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h3>
-        <p>
-          Nous passons notre vie à chercher le bonheur, et lorsque nous y
-          touchons, nous n’avons qu’une envie : le figer au travers de
-          photographies pour le savourer avec les personnes qui sont importantes
-          à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
-          propose : saisir ces merveilleux moments au travers de mon regard, mon
-          approche, ma technique. Rendre ces moments immortels, afin que vous
-          puissiez y puiser de l’amour, du bonheur, de la tendresse et de
-          lumière à chaque fois que vous poserez les yeux sur vos photos.
-        </p>
-      </div>
+      <!-- PP nina -->
+      <img alt="nina" class="picture-nina" src="./assets/images/nina.webp" />
+      <!-- Aboute-me -->
+    <div id="about-me" itemscope itemtype="http://schema.org/Person">
+  <h2 class="about-me__title">A propos de moi</h2>
+  <h3 class="about-me__introduction" itemprop="description">
+    Devenir photographe était pour moi une évidence. Comme si j’y étais
+    prédestiné. Saisir un moment, une émotion, une situation, un endroit,
+    une lumière et les rendre immortels, voilà ce qui me fait vibrer.
+  </h3>
+  <p itemprop="description">
+    Nous passons notre vie à chercher le bonheur, et lorsque nous y
+    touchons, nous n’avons qu’une envie : le figer au travers de
+    photographies pour le savourer avec les personnes qui sont importantes
+    à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
+    propose : saisir ces merveilleux moments au travers de mon regard, mon
+    approche, ma technique. Rendre ces moments immortels, afin que vous
+    puissiez y puiser de l’amour, du bonheur, de la tendresse et de
+    lumière à chaque fois que vous poserez les yeux sur vos photos.
+  </p>
+</div>
+
     </section>
     <section id="gallery">
       <h4 class="title-portfolio">Portfolio</h4>
-      <div class="container py-3">
+      <div class="container py-3" itemscope itemtype="">
         <div class="gallery" style="display: none">
           <img
             data-gallery-tag="Concert"
@@ -198,64 +268,69 @@
           />
         </div>
       </div>
-      <div class="quote">
-        <figure>
-          <blockquote>
-            <h4 class="quote__text">
-              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
-              qu’un fait est traduit en photo, il cesse d’être un fait pour
-              devenir une opinion. L’inexactitude n’existe pas en photographie.
-              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h4>
-          </blockquote>
-          <figcaption class="quote__author">- Richard Avedon</figcaption>
-        </figure>
-      </div>
+      <div class="quote" itemscope itemtype="http://schema.org/Quotation">
+  <figure>
+    <blockquote>
+      <h4 class="quote__text" itemprop="text">
+        Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+        qu’un fait est traduit en photo, il cesse d’être un fait pour
+        devenir une opinion. L’inexactitude n’existe pas en photographie.
+        Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+      </h4>
+    </blockquote>
+    <figcaption class="quote__author" itemprop="author">- Richard Avedon</figcaption>
+  </figure>
+</div>
     </section>
     <section id="services">
       <h3 class="title">Mes services</h3>
       <div class="container">
-        <div class="service">
-          <div class="service__description">
-            <h4>Shooting photo</h4>
-            <p>
-              Pour capturer vos moments les plus précieux et garder un souvenir
-              impérissable. Je me déplace en Île-de-France pour réaliser vos
-              photos
-            </p>
-          </div>
-          <div class="service__price">
-            <h3>350€/demi journée</h3>
-            <span>Matériel, déplacement inclus</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h4>Retouches</h4>
-            <p>
-              Vous souhaitez retoucher vos photos pour un résultat professionnel
-              ? Bénéficier d’un rendu optimal pour vos publications
-            </p>
-          </div>
-          <div class="service__price">
-            <h3>50€/photo</h3>
-            <span>2 AR par photo</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h4>Album photos</h4>
-            <p>
-              Partagez avec vos proches et vos clients les photos des moments
-              partagés ensemble à travers un album photo personnalisé
-            </p>
-          </div>
-          <div class="service__price">
-            <h3>400€ album A4</h3>
-            <span>30 pages recto/verso</span>
-          </div>
-        </div>
-      </div>
+  <!-- Premier service : Shooting photo -->
+  <div class="service" itemscope itemtype="http://schema.org/Product">
+    <div class="service__description">
+      <h4 itemprop="name">Shooting photo</h4>
+      <p itemprop="description">
+        Pour capturer vos moments les plus précieux et garder un souvenir
+        impérissable. Je me déplace en Île-de-France pour réaliser vos photos
+      </p>
+    </div>
+    <div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <h3 itemprop="price">350€/demi journée</h3>
+      <span itemprop="description">Matériel, déplacement inclus</span>
+    </div>
+  </div>
+
+  <!-- Deuxième service : Retouches -->
+  <div class="service" itemscope itemtype="http://schema.org/Product">
+    <div class="service__description">
+      <h4 itemprop="name">Retouches</h4>
+      <p itemprop="description">
+        Vous souhaitez retoucher vos photos pour un résultat professionnel ?
+        Bénéficier d’un rendu optimal pour vos publications
+      </p>
+    </div>
+    <div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <h3 itemprop="price">50€/photo</h3>
+      <span itemprop="description">2 AR par photo</span>
+    </div>
+  </div>
+
+  <!-- Troisième service : Album photos -->
+  <div class="service" itemscope itemtype="http://schema.org/Product">
+    <div class="service__description">
+      <h4 itemprop="name">Album photos</h4>
+      <p itemprop="description">
+        Partagez avec vos proches et vos clients les photos des moments
+        partagés ensemble à travers un album photo personnalisé
+      </p>
+    </div>
+    <div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+      <h3 itemprop="price">400€ album A4</h3>
+      <span itemprop="description">30 pages recto/verso</span>
+    </div>
+  </div>
+</div>
+
     </section>
     <section class="quote">
       <figure>
@@ -276,27 +351,33 @@
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
-          <form action="" method="post">         
+          <form action="" method="post">
             <!-- <input type="text" name="nom" id="nom" /> -->
-            <label>Nom <input type="text"></label>
-            <label>Email <input type="text"></label>
-            <label for="message"> Message <textarea 
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea></label>
+            <label>Nom <input type="text" /></label>
+            <label>Email <input type="text" /></label>
+            <label for="message">
+              Message
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
             <!-- <label>Email</label> -->
             <!-- <input type="email" name="email" id="email" /> -->
-            <!-- <label>Message</label> --> 
-            
+            <!-- <label>Message</label> -->
+
             <input type="submit" value="Envoyer" />
           </form>
-        </footer> 
-        <!-- <div class="picture right"> -->
-        <img alt="camera" class="img-camera" src="./assets/images/camera.webp" />
-        </div>
         </footer>
+        <!-- <div class="picture right"> -->
+        <img
+          alt="camera"
+          class="img-camera"
+          src="./assets/images/camera.webp"
+        />
+      </div>
     </section>
   </body>
-</html> 
+</html>
