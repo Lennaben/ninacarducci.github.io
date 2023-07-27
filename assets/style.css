@@ -375,4 +375,11 @@ input[type="submit"] {
   .picture {
     width: 80%;
   }
+
+  .footer-infos{
+    background-color: black;
+    width: 100px;
+    margin-right: 50%;
+    /* height: ; */
+  }
 }   
